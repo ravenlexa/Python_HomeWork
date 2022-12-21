@@ -20,3 +20,5 @@ for i in num:
         summa += int(i)
 
 print(f"Сумма цифр числа {num} равна: ", summa)
+
+
