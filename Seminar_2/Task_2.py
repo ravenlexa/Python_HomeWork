@@ -14,3 +14,4 @@ for i in range(1, num + 1):
 
 print(f'Для n = {num} последовательность:{my_list}')
 print(f'Сумма: {round(sum(my_list), 2)}')
+
