@@ -8,19 +8,17 @@ import random
 num = int(input('Введите размер списка '))
 my_list = []
 for i in range(num):
-    f = random.uniform(0, 9)
-    my_list.append(round(f, 2))
-
-minn = my_list[0]
-maxx = 0
-for i in range(len(my_list)):
-
-    if maxx < my_list[i]:
-        maxx = my_list[i]
-    if minn > my_list[i]:
-        minn = my_list[i]
-dif = (maxx - int(maxx)) - (minn - int(minn))
+    float = random.uniform(0, 9)
+    my_list.append(round(float, random.randint(0, 3)))
 
 print(my_list)
-print(maxx, minn)
-print(round(dif, 2))
+
+new_list = []
+
+for i in my_list:
+    if i != int(i):
+        new_list.append(round(i % 1, 3))
+print(new_list)
+print(f'Разница между масимальной ({max(new_list)}) и минимальной ({min(new_list)})'
+      f'дробными частями будет ({max(new_list)-min(new_list)})')
+
