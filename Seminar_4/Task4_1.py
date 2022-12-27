@@ -32,6 +32,9 @@ for i in range(len(index)):
 result.pop(-1)  # убираем последний знак (+ или -)
 result.append('=0')  # добавляем в конце к любому многочлену
 print(''.join(result))
+record = open('data.txt', 'w')
+record.write(''.join(result))
+record.close()
 
 
 
