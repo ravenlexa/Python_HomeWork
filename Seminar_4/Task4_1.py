@@ -22,7 +22,7 @@ for i in range(len(index)):
         result.append(f'{index[i]}')
     else:
         result.append(f'{index[i]}*x^{k}')
-    signs = randint(0, 1) # вставляем рандомные знаки
+    signs = randint(0, 1)  # вставляем рандомные знаки
     if signs == 1:
         result.append('+')
     elif signs == 0:
