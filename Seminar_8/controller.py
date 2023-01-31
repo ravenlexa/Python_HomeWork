@@ -18,13 +18,14 @@ def start():
         journal = model.get_journal()
         view.list_of_child(journal)
         student = view.who_answer()
-        if student == 'exit':
+        if student == 'выход':
             break
         for key in journal:
             if key == student:
                 mark = int(view.what_mark())
                 if 0 < mark < 6:
                     model.student_mark(student, mark)
+                    break
                 else:
                     view.not_mark()
                     break

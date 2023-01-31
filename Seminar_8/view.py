@@ -7,7 +7,8 @@ def input_class():
 
 
 def not_class():
-    print('Такого класса нет!')
+    print('Такого класса нет!!!'
+          '\n--------------------')
 
 
 def list_of_subject(subject_list: list):
@@ -21,7 +22,8 @@ def input_subject():
 
 
 def not_subject():
-    print('Такого предмета нет!')
+    print('Такого предмета нет!!!'
+          '\n--------------------')
 
 
 def who_answer():
@@ -30,7 +32,8 @@ def who_answer():
 
 
 def not_student():
-    print('Такого ученика нет!')
+    print('Такого ученика нет!!!'
+          '\n--------------------')
 
 
 def what_mark():
@@ -39,7 +42,8 @@ def what_mark():
 
 
 def not_mark():
-    print('Такой оценки не существует в нашей стране!!!')
+    print('Такой оценки не существует в нашей стране!!!'
+          '\n--------------------------------------------')
 
 
 def list_of_child(journal: dict):
